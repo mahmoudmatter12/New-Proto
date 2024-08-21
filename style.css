@@ -24,10 +24,12 @@ body {
 }
 
 .logo {
+  font-family: "Qwitcher Grypen", cursive;
+  font-style: normal;
   position: relative;
-  font-size: 24px;
+  font-size: 100px;
   color: cyan;
-  width: fit-content;
+  width: 1000px;
   text-decoration: none;
   font-weight: 600;
 }
@@ -287,11 +289,11 @@ a.active {
 
 .home-imgHover {
   position: absolute;
-  top: 150px;
+  top: 120px;
   right: 150px;
   width: 500px;
   height: 750px;
-  background: #00abf0;
+  /* background: #00abf0; */
   /* border: red 2px solid; */
   border-radius: 20px;
   overflow: hidden;
@@ -309,7 +311,7 @@ a.active {
   height: 100%;
   background: #081b29;
   z-index: 2;
-  animation: showRight 1s ease forwards;
+  animation: showLeft 1s ease forwards;
   animation-delay: 2.7s;
 }
 
@@ -318,7 +320,7 @@ a.active {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border: #00abf0 solid 2px;
+  /* border: #00abf0 solid 2px; */
   border-radius: 20px;
 }
 
@@ -330,6 +332,11 @@ a.active {
 @keyframes showRight {
   100% {
     width: 0;
+  }
+}
+@keyframes showLeft {
+  100% {
+    width: 0%;
   }
 }
 
@@ -366,8 +373,8 @@ a.active {
   width: 100%;
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black with opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
 }
 
 /* Modal Content */
@@ -382,8 +389,7 @@ a.active {
   border-radius: 10px;
 }
 
-
-.close{
+.close {
   top: 10px;
   /* border: red solid 2px; */
   font-size: 24px;
@@ -397,7 +403,6 @@ a.active {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /* Button Styles */
 .action-btn {
@@ -436,4 +441,73 @@ a.active {
 
 .modal-actions {
   margin-top: 20px; /* Space above the buttons */
+}
+
+/* Modal Styles */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #081b29;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #00abf0;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  color: #fff; /* White text */
+  text-align: center; /* Center the text */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow */
+  animation: fadeIn 0.5s ease; /* Fade-in animation */
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Services List */
+.services {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.services li {
+  background-color: #00abf0; /* Blue background for each item */
+  color: #fff; /* White text */
+  margin: 10px 0; /* Space between items */
+  padding: 15px; /* Padding for a better look */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Slightly larger text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for List Items */
+.services li:hover {
+  background-color: #008ecf; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Modal Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
