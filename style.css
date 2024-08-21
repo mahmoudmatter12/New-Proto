@@ -397,3 +397,43 @@ a.active {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+/* Button Styles */
+.action-btn {
+  background-color: #00abf0; /* Primary color */
+  color: #fff; /* White text */
+  padding: 12px 24px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  margin-right: 10px; /* Space between buttons */
+}
+
+/* Hover Effect */
+.action-btn:hover {
+  background-color: #008ecf; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Additional Effects */
+.action-btn:active {
+  background-color: #007bbd; /* Even darker shade on click */
+  transform: scale(1); /* Return to original size on click */
+}
+
+/* Modal Content Adjustments */
+.modal-content {
+  padding: 20px;
+  background-color: #081b29;
+  border: 1px solid #00abf0;
+  border-radius: 10px;
+  text-align: center; /* Center text inside modal */
+}
+
+.modal-actions {
+  margin-top: 20px; /* Space above the buttons */
+}
