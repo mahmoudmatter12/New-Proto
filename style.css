@@ -69,9 +69,7 @@ a.active {
 .home {
   height: 100vh;
   display: flex;
-  /* background-image: url(/Portfolio/martial/proto-pic.png) ; */
   background-size: cover;
-  /* background-position: center ; */
   align-items: center;
   padding: 0 10%;
 }
@@ -387,6 +385,7 @@ a.active {
   width: 80%; /* Could be more or less, depending on screen size */
   max-width: 600px;
   border-radius: 10px;
+  z-index: 1001; /* Sit on top */
 }
 
 .close {
