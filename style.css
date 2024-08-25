@@ -338,29 +338,6 @@ a.active {
   }
 }
 
-@media (max-width: 1000px) {
-  .home {
-    gap: 4rem;
-  }
-}
-
-@media (max-width: 995px) {
-  .home {
-    position: absolute;
-    flex-direction: column;
-    margin: 5rem 4rem;
-  }
-
-  .home-content {
-    text-align: center;
-    order: 2; /* This ensures the text appears after the image */
-  }
-
-  .home-imgHover {
-    display: none;
-  }
-}
-
 /* The Modal (background) */
 .modal1 {
   display: none; /* Hidden by default */
@@ -508,5 +485,45 @@ a.active {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    /* display: none; */
+    /* border: red solid 2px; */
+    height: 100px;
+  }
+  .logo {
+    /* display: none; */
+    /* border: red solid 2px; */
+    height: fit-content;
+    width: fit-content;
+    font-size: 60px;
+    padding-left: 60px;
+  }
+  .navbar {
+    /* display: none; */
+    /* border: rgb(122, 72, 72) solid 2px; */
+    height: 100px;
+    width: fit-content;
+  }
+  #openAboutModal,
+  #openServicesModal,
+  #openPortfolioModal,
+  #openContactModal,
+  #openHomeModal {
+   display: none;
+  }
+  .home-imgHover {
+    /* display: none; */
+    display: none;
+    width: 300px;
+    height: 200px;
+    border-radius: 60%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
   }
 }
